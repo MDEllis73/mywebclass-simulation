@@ -1,6 +1,6 @@
 | issue title | story point | issue link | satus | assigned to | assigned on | completed on | category | status notes |
 |-------------|-------------|------------|-------|-------------|-------------|--------------|----------|--------------|
-|             |             |            |       |             |             |              |          |              |
+| github page |             |            |       |             |             |              |          |              |
 |             |             |            |       |             |             |              |          |              |
 |             |             |            |       |             |             |              |          |              |
 |             |             |            |       |             |             |              |          |              |
