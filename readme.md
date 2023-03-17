@@ -1,4 +1,4 @@
-# Learn Software Engineering and Modern Business Practices with MyWebClass Simulation..Test
+# Learn Software Engineering and Modern Business Practices with MyWebClass Simulation
 ## Instructor Introduction
 Dear students,
 
