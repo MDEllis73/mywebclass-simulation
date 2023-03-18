@@ -1,10 +1,10 @@
 ---
 name: Question
-about: Use this to ask the instructor a question.
+about: Use this to ask the team a question.
 title: ''
 labels: question
-assignees: kaw393939
+assignees: ''
 
 ---
 
-Please succinctly describe your question and include any error messages or screen shots of the problem that will help communicate the issue to your instructor.
+Please succinctly describe your question and include any error messages or screen shots of the problem that will help communicate the issue to your team.
