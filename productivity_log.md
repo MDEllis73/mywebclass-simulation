@@ -1,13 +1,13 @@
-| issue title                 | story point | issue link                                                                    | satus       | assigned to | assigned on | completed on | category | status notes |
+| issue title | story point | issue link | status | assigned to | assigned on | completed on | category | status notes |
 |-----------------------------|-------------|-------------------------------------------------------------------------------|-------------|-------------|-------------|--------------|----------|--------------|
-| 3. optimized keywords       | 8 points    | https://github.com/MDEllis73/mywebclass-simulation/issues/12#issue-1630991494 | todo        | Michael     | 3/19/23     |              |          |              |
-| 8. Project tracking tools   | 3 points    | https://github.com/MDEllis73/mywebclass-simulation/issues/2#issue-1622646585  | done        | Michael     | 3/11/23     | 3/17/23      | document |              |
-| 1. Legal Compliance         | 5 points    | https://github.com/MDEllis73/mywebclass-simulation/issues/11#issue-1630990962 | in progress | Michael     | 3/19/23     |              | document |              |
-| 4. Accessibility guidelines | 3 points    | https://github.com/MDEllis73/mywebclass-simulation/issues/13#issue-1630991921 | todo        | Michael     | 3/19/23     |              | document |              |
-|                             |             |                                                                               |             |             |             |              |          |              |
-|                             |             |                                                                               |             |             |             |              |          |              |
-|                             |             |                                                                               |             |             |             |              |          |              |
-|                             |             |                                                                               |             |             |             |              |          |              |
+| 3. optimized keywords|8 points| https://github.com/MDEllis73/mywebclass-simulation/issues/12#issue-1630991494|todo|Michael| 3/19/23|              |          |              |
+| 8. Project tracking tools   |3 points| https://github.com/MDEllis73/mywebclass-simulation/issues/2#issue-1622646585| done | Michael | 3/11/23| 3/17/23      | document |              |
+| 1. Legal Compliance         |5 points| https://github.com/MDEllis73/mywebclass-simulation/issues/11#issue-1630990962 | in progress | Michael     | 3/19/23|              | document |              |
+| 4. Accessibility guidelines |3 points| https://github.com/MDEllis73/mywebclass-simulation/issues/13#issue-1630991921 | todo        | Michael     | 3/19/23|              | document |              |
+|2. Conduct research to gather information on the languages and regions that the website should support|5 points|https://github.com/MDEllis73/mywebclass-simulation/issues/7|todo|Pil|3/19/23|X|document|              |
+|5. Develop a content strategy|5 points|https://github.com/MDEllis73/mywebclass-simulation/issues/8| todo|Pil|3/19/23|X|document|              |
+|6. Research, analyze and create a plan for implementing GDPR requirements for website analytics using the Google Consent API and Javascript, and present the plan for feedback and approval|5 points|https://github.com/MDEllis73/mywebclass-simulation/issues/10| todo|Pil|3/19/23|X|document|              |
+|7. Create a test plan for automated performance testing with Playwright|8 points|https://github.com/MDEllis73/mywebclass-simulation/issues/9| todo|Pil|3/19/23|X|document|              |
 |                             |             |                                                                               |             |             |             |              |          |              |
 |                             |             |                                                                               |             |             |             |              |          |              |
 |                             |             |                                                                               |             |             |             |              |          |              |
