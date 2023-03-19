@@ -1,23 +1,23 @@
-| issue title | story point | issue link | satus | assigned to | assigned on | completed on | category | status notes |
-|-------------|-------------|------------|-------|-------------|-------------|--------------|----------|--------------|
-| github page |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
-|             |             |            |       |             |             |              |          |              |
+| issue title                 | story point | issue link                                                                    | satus       | assigned to | assigned on | completed on | category | status notes |
+|-----------------------------|-------------|-------------------------------------------------------------------------------|-------------|-------------|-------------|--------------|----------|--------------|
+| 3. optimized keywords       | 8 points    | https://github.com/MDEllis73/mywebclass-simulation/issues/12#issue-1630991494 | todo        | Michael     | 3/19/23     |              |          |              |
+| 8. Project tracking tools   | 3 points    | https://github.com/MDEllis73/mywebclass-simulation/issues/2#issue-1622646585  | done        | Michael     | 3/11/23     | 3/17/23      | document |              |
+| 1. Legal Compliance         | 5 points    | https://github.com/MDEllis73/mywebclass-simulation/issues/11#issue-1630990962 | in progress | Michael     | 3/19/23     |              | document |              |
+| 4. Accessibility guidelines | 3 points    | https://github.com/MDEllis73/mywebclass-simulation/issues/13#issue-1630991921 | todo        | Michael     | 3/19/23     |              | document |              |
+|                             |             |                                                                               |             |             |             |              |          |              |
+|                             |             |                                                                               |             |             |             |              |          |              |
+|                             |             |                                                                               |             |             |             |              |          |              |
+|                             |             |                                                                               |             |             |             |              |          |              |
+|                             |             |                                                                               |             |             |             |              |          |              |
+|                             |             |                                                                               |             |             |             |              |          |              |
+|                             |             |                                                                               |             |             |             |              |          |              |
+|                             |             |                                                                               |             |             |             |              |          |              |
+|                             |             |                                                                               |             |             |             |              |          |              |
+|                             |             |                                                                               |             |             |             |              |          |              |
+|                             |             |                                                                               |             |             |             |              |          |              |
+|                             |             |                                                                               |             |             |             |              |          |              |
+|                             |             |                                                                               |             |             |             |              |          |              |
+|                             |             |                                                                               |             |             |             |              |          |              |
+|                             |             |                                                                               |             |             |             |              |          |              |
+|                             |             |                                                                               |             |             |             |              |          |              |
+|                             |             |                                                                               |             |             |             |              |          |              |
