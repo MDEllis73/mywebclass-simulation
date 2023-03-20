@@ -3,7 +3,8 @@ name: Website Performance Test
 on:
   push:
     branches:
-      - development
+      - 'master'
+      - 'development'
 
 jobs:
   performance-test:
