@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Measure website performance
-        uses: GoogleChrome/lighthouse-ci-action@v2
+        uses: docker/setup-buildx-action@v2
         with:
           urls: 'http://localhost:3000/privacy.html'
           budgetPath: './budget.json'
