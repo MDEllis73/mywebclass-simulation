@@ -25,7 +25,7 @@ jobs:
         run: npm start & sleep 10
 
       - name: Generate Lighthouse report
-        run: npx lighthouse http://localhost:3000 --output=json --output-path=./report.json
+        run: npx lighthouse https://mdellis73.github.io/mywebclass-simulation/ --output=json --output-path=./report.json
 
       - name: Upload report as artifact
         uses: actions/upload-artifact@v2
