@@ -32,7 +32,7 @@ function createPrivacyModal () {
           </div>
           <div class="modal-body">
             <p>Please read our <a href="privacy.html" target="_blank">Privacy Policy</a> carefully before using our website.</p>
-            <p>Do you agree to our Privacy Policy?</p>
+            <p>Do You Agree To Our Privacy Policy?</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Disagree</button>
