@@ -3,7 +3,7 @@ name: Website Performance Report
 on:
   push:
     branches:
-      - main
+      - "development"
 
 jobs:
   lighthouse:
