@@ -1,22 +1,72 @@
-name: Automated website performance test
+name: Test, Build, and Push Image to Docker
 
 on:
   push:
-  pull_request:
+    branches:
+      - 'master'
+      - 'development'
+    tags:
+      - 'v*'
+
+env:
+  DOCKER_REPO_NAME: kaw393939/mywebclass
 
 jobs:
-  website-performance-test:
+  build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ["lts/*"]
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: Setup Node
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache
+            ./node_modules
+          key: ${{ runner.os }}-${{ env.DOCKER_REPO_NAME }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ env.DOCKER_REPO_NAME }}-
+            ${{ runner.os }}-
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version: ${{ matrix.node-version }}
       - name: Install dependencies
-        run: npm ci
-      - name: Install playwright browsers
-        run: npx playwright install --with-deps
-      - name: Run performance test
-        run: npx playwright test --config=playwright.config.js --grep="performance"
+        run: |
+          npm install
+          npx playwright install-deps
+      - name: Test Playwright
+        id: playwright-tests
+        run: |
+          npx playwright install
+          npx playwright test --config=playwright.config.js
+      - if: steps.playwright-tests.outcome == 'success'
+        name: Login to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@v4
+        with:
+          images: ${{ env.DOCKER_REPO_NAME }}
+      # https://github.com/docker/setup-qemu-action
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+      # https://github.com/docker/setup-buildx-action
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      - name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          platforms: 'linux/arm64/v8, linux/amd64'
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
