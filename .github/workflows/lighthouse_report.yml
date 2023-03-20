@@ -25,7 +25,6 @@ jobs:
       
     - name: Generate Report
       run: |
-        mkdir -p test-results
         lighthouse http://localhost:3000 --output html --output-path=./test-results/report.html
         
     - name: Upload Artifact
