@@ -72,7 +72,7 @@ function initializePrivacyModal () {
 }
 
 function loadGoogleAnalytics () {
-  // Replace "GA_MEASUREMENT_ID" with your Google Analytics Measurement ID J2FCEQRZJ1
+  // Replace "GA_MEASUREMENT_ID" with your Google Analytics Measurement ID
   const gaMeasurementId = 'J2FCEQRZJ1'
 
   // Load the Google Analytics tracking code

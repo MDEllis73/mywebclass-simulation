@@ -1,0 +1,26 @@
+name: Measure Page Load Time
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  measure_page_load_time:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Measure page load time
+        run: node measure-page-load-time.js
+        env:
+          URL: 'https://www.yourwebsite.com'
