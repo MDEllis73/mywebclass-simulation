@@ -1,13 +1,7 @@
 const { test, expect } = require('@playwright/test')
 
-test('Measure page load time', async ({ page }) => {
-  const navigationPromise = page.goto('https://example.com')
-  const performanceTiming = JSON.parse(await page.evaluate(() =>
-    JSON.stringify(window.performance.timing)
-  ))
-
-  await navigationPromise
-
-  const loadTime = performanceTiming.responseEnd - performanceTiming.navigationStart
-  expect(loadTime).toBeLessThan(2000) // Set an appropriate threshold
+test('Check Privacy Policy Page', async ({ page }) => {
+  await page.goto('https://mdellis73.github.io/mywebclass-simulation/')
+  const pageTitle = await page.title()
+  expect(pageTitle).toBe('MyWebClass.org | Privacy Policy')
 })
