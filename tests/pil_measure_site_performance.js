@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test')
 
 test('Measure page load time', async ({ page }) => {
-  const navigationPromise = page.goto('http://localhost:3000')
+  const navigationPromise = page.goto('https://mdellis73.github.io/mywebclass-simulation/')
   const performanceTiming = JSON.parse(await page.evaluate(() =>
     JSON.stringify(window.performance.timing)
   ))
