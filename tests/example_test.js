@@ -1,7 +1,13 @@
 const { test, expect } = require('@playwright/test')
 
-test('Check Privacy Policy Page', async ({ page }) => {
-  await page.goto('http://localhost:3000/privacy.html')
-  const pageTitle = await page.title()
-  expect(pageTitle).toBe('MyWebClass.org | Privacy Policy')
+test('Measure page load time', async ({ page }) => {
+  const navigationPromise = page.goto('https://example.com')
+  const performanceTiming = JSON.parse(await page.evaluate(() =>
+    JSON.stringify(window.performance.timing)
+  ))
+
+  await navigationPromise
+
+  const loadTime = performanceTiming.responseEnd - performanceTiming.navigationStart
+  expect(loadTime).toBeLessThan(2000) // Set an appropriate threshold
 })
