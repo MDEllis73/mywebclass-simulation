@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test')
 
-test('Check Privacy Policy Page', async ({ page }) => {
+test('test', async ({ page }) => {
   await page.goto('http://localhost:3000/')
-  const pageTitle = await page.title()
-  expect(pageTitle).toBe('MyWebClass.org')
+  await page.getByRole('button', { name: 'Agree', exact: true }).click()
+  await page.getByRole('link', { name: 'Privacy Page' }).click()
 })
