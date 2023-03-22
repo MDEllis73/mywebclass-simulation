@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test'
 
 test('Measure Load Time', async ({ page }) => {
+  await page.getByRole('button', { name: 'Agree', exact: true }).click()
   const startTime = Date.now()
   await page.goto('http://localhost:3000/')
   const endTime = Date.now()
