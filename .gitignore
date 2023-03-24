@@ -11,4 +11,3 @@ venv
 .github/workflows/*.bak
 .vscode
 docs
-t_e_s_t_s
