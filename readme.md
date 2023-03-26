@@ -63,3 +63,7 @@ Finally, use Playwright to create powerful and reliable automated tests for web 
 
 
 # ADD YOUR PROJECT LINKS BELOW THIS 
+
+For instructions on how to work on the project, click here: [Installation Instructions](https://github.com/MDEllis73/mywebclass-simulation/wiki/Project-Installation-Instructions)
+
+For instructions on how to deploy the project to GitHub Pages, click here: [Project Deployment Instructions](https://github.com/MDEllis73/mywebclass-simulation/wiki/Production-Deployment-Instructions)
