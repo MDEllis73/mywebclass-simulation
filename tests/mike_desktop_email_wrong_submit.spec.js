@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test'
+import { test } from '@playwright/test'
 
 test('test', async ({ page }) => {
   await page.goto('https://mdellis73.github.io/mywebclass-simulation/')
