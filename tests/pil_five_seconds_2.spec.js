@@ -1,6 +1,6 @@
 import { test } from '@playwright/test'
 
-test('test', async ({ page }) => {
+test('5 Seconds Performance Test for our Website Desktop Version', async ({ page }) => {
   await page.goto('https://mdellis73.github.io/mywebclass-simulation/index.html')
   await page.getByRole('button', { name: 'Agree', exact: true }).click()
   // Wait for 1 second

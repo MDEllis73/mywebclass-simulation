@@ -4,7 +4,7 @@ test.use({
   ...devices['Galaxy S9+']
 })
 
-test('test', async ({ page }) => {
+test('Mobile Version Test Checkup', async ({ page }) => {
   await page.goto('https://mdellis73.github.io/mywebclass-simulation/')
   await page.getByRole('button', { name: 'Agree', exact: true }).click()
   await page.getByText('Monthly digest of what\'s new and exciting from us.').click()
