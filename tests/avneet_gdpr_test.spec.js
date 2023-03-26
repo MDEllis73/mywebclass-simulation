@@ -1,6 +1,6 @@
 import { test } from '@playwright/test'
 
-test('test', async ({ page }) => {
+test('Checks for GDPR Compliance via 3rd party website 2gdpr.com', async ({ page }) => {
   // Navigate to 3rd party GDPR tester
   await page.goto('https://2gdpr.com/')
   // Enter our webpage link
