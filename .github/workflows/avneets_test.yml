@@ -1,4 +1,4 @@
-name: Test, Build, and Push Image to Docker - Efficient Version
+name: Test, Build, and Push Image to Docker Efficient Version
 
 on:
   push:
@@ -38,8 +38,6 @@ jobs:
           npm install
           npx playwright install
           npx playwright test --config=playwright.config.js
-        if-no-outputs:
-          tests-passed
 
       - name: Login to DockerHub
         if: ${{ needs.build.outputs.tests-passed == 'success' }}
