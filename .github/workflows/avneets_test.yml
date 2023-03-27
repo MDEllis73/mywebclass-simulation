@@ -49,7 +49,7 @@ jobs:
       - name: Extract metadata (tags, labels) for Docker
         if: ${{ needs.build.outputs.tests-passed == 'success' }}
         id: meta
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v4
         with:
           images: ${{ env.DOCKER_REPO_NAME }}
 
