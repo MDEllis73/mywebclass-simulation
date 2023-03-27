@@ -1,6 +1,6 @@
 import { test } from '@playwright/test'
 
-test('test', async ({ page }) => {
+test('Google Analytics HTML Code Checkup', async ({ page }) => {
   await page.goto('https://github.com/MDEllis73/mywebclass-simulation')
   await page.getByRole('link', { name: 'src' }).click()
   await page.getByRole('link', { name: 'index.html' }).click()
